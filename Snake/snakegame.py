@@ -45,10 +45,8 @@ while(x):
         f.move()
     if anycor(tbody[0], SIZE):
         x=False
-    for i in tbody:
-        if tbody[0]==i:
-            pass
-        elif tbody[0].distance(i)<5:
+    for i in tbody[1:]:
+        if tbody[0].distance(i)<5:
             x=False
     if x==False:
         t.write("G A M E  O V E R",True,"center",("Arial",19,"normal"))
